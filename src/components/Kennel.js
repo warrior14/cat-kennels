@@ -5,6 +5,10 @@ import "./animal/Animal.css";
 import { EmployeeCard } from "./employee/EmployeeCard";
 import { LocationCard } from "./location/LocationCard";
 import { CustomerCard } from "./customer/CustomerCard";
+import { PropsAndState } from "./PropsAndState.js";
+
+
+
 
 export const Kennel = () => {
     return <>
@@ -16,6 +20,8 @@ export const Kennel = () => {
                 </address>
 
 
+        {/* here is where I invoke the prop card  */}
+        <PropsAndState myName="Luke Madrazo" />
         <h2>Animals</h2>
             <article className="animals">
                 <AnimalCard />

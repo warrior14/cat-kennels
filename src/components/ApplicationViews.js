@@ -1,12 +1,12 @@
 import React from "react";
-import { Route } from "react-router-dom";
-import { Home } from "./animal/AnimalCard.js";
+import { Route, Routes } from "react-router-dom";
+import { Home } from "./Home.js";
 import { AnimalCard } from "./animal/AnimalCard.js";
 
 export const ApplicationViews = () => {
     return (
         <>
-        
+            <Routes>
                 {/* render the location list when http://locahost:3000/ */}
                 <Route exact path = "/">
                     <Home />
@@ -17,7 +17,7 @@ export const ApplicationViews = () => {
                     <AnimalCard />
                 </Route>
         
-        
+                </Routes>
          </>
     )
 }

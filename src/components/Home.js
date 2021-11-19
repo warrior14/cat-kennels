@@ -1,8 +1,9 @@
 import React from "react";
 import { PropsAndState } from './PropsAndState.js';
+import "./Home.css";
 
 
-export const Hone = () => (
+export const Home = () => (
     <> 
     
         <h2>Nashville Kennels</h2>

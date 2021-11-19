@@ -6,6 +6,10 @@ import { EmployeeCard } from "./employee/EmployeeCard";
 import { LocationCard } from "./location/LocationCard";
 import { CustomerCard } from "./customer/CustomerCard";
 import { PropsAndState } from "./PropsAndState.js";
+import { NavBar } from "./nav/Navbar.js";
+import { ApplicationViews } from "./ApplicationViews.js";
+import { Home } from "./Home.js";
+import { Route, Routes } from "react-router-dom";
 
 
 
@@ -13,8 +17,12 @@ import { PropsAndState } from "./PropsAndState.js";
 
 export const Kennel = () => (
     <>
+    <Routes>
+    <Route>
         <NavBar />
         <ApplicationViews />
+    </Route>
+    </Routes>
     </>
 )
 

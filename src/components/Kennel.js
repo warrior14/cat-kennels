@@ -15,17 +15,28 @@ import { Route, Routes } from "react-router-dom";
 
 
 
-export const Kennel = () => (
-    <>
-    <Routes>
-    <Route>
-        <NavBar />
-        <ApplicationViews />
-    </Route>
-    </Routes>
-    </>
-)
+// export const Kennel = () => (
+//     <>
+//         <Routes>
+//             <h1>hello world</h1>
+//         </Routes>
+//     </>
+        
+// );
 
+
+export const Kennel = () => (
+    <Routes>
+         <Route path="/*" element={
+            <>
+                <NavBar />
+                <ApplicationViews />
+            </>
+         }
+        />
+    </Routes>
+        
+);
 
 
 

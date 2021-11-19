@@ -5,19 +5,12 @@ import { AnimalCard } from "./animal/AnimalCard.js";
 
 export const ApplicationViews = () => {
     return (
-        <>
-            <Routes>
+        <Routes>
                 {/* render the location list when http://locahost:3000/ */}
-                <Route exact path = "/">
-                    <Home />
-                </Route>
-
+                <Route exact path="/" element={<Home />}/>
+                        
                 {/* render the animal list when http:localhost:3000/animals */}
-                <Route path="/animals">
-                    <AnimalCard />
-                </Route>
-        
-                </Routes>
-         </>
+                <Route path="/animals" element={<AnimalCard />}/>               
+         </Routes>
     )
 }

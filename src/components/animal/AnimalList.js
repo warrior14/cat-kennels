@@ -26,3 +26,7 @@ export const AnimalList = () => {
     </div>
   )
 }
+
+
+//The useEffect hook allows the component to reach out into the world for anything that cannot be handled during render. 
+//In this case, it is the API call for the animals.

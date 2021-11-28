@@ -20,7 +20,7 @@ export const ApplicationViews = () => {
                 {/* render the animal list when http:localhost:3000/animals */}
                 <Route path="/animals" element={
                     <AnimalProvider>
-                        <AnimalCard />
+                        <AnimalList />
                     </AnimalProvider>
                 }/>         
                  {/* render the animal list when http:localhost:3000/animals */}
@@ -35,3 +35,7 @@ export const ApplicationViews = () => {
          </Routes>
     )
 }
+
+
+// since i am not hard coding data anymore i have to change <AnimalCard /> to <AnimalList /> because it is now dynamic, animal list is the parent
+// animal card, invoking animalist will invoke animal card as well

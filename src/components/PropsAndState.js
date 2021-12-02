@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 // making the prop card and having the parameter of myName so that when I invoke it on Kennel.js, it will say my name
 export const PropsAndState = ({myName}) => {
-// make the empty variable first, then the function that changes the value of that variable and then let the state know what the intial value 
+// make the empty variable first, then the function that changes the value of that variable and then let the state know what the intial value is
     let [countClicks, setCountClicks] = useState(0)
 
 

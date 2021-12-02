@@ -7,6 +7,11 @@ import { LocationCard } from "./location/LocationCard.js";
 import { EmployeeCard } from "./employee/EmployeeCard.js";
 import { AnimalProvider } from "./animal/AnimalProvider.js";
 import { AnimalList } from "./animal/AnimalList.js";
+import { CustomerProvider } from "./customer/CustomerProvider.js";
+import { CustomerList } from "./customer/CustomerList.js";
+
+
+
 
 // every component must be inside 
 
@@ -24,8 +29,12 @@ export const ApplicationViews = () => {
                     </AnimalProvider>
                 }/>         
                  {/* render the animal list when http:localhost:3000/animals */}
-                 <Route path="/customers" element={<CustomerCard />}/>   
-
+                 <Route path="/customers" element={
+                     <CustomerProvider>
+                        <CustomerList />
+                        </CustomerProvider>  
+                }/>   
+                    
                   {/* render the animal list when http:localhost:3000/animals */}
                 <Route path="/locations" element={<LocationCard />}/>   
 

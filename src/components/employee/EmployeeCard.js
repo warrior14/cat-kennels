@@ -10,7 +10,7 @@ export const EmployeeCard = () => (
      <>
             <section className="animal">
                 <h3 className="animal_name">Luke Madrazo</h3>
-                <div className="animal_breed">Nashville Kennels North</div>
+                <div className="animal_breed">Nashville Cat Kennels North</div>
             </section>
 
             </>

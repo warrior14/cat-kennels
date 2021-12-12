@@ -10,7 +10,7 @@ export const Home = () => (
 
 
         <address>
-            <div>Visit us at the Nashville North Location</div>
+            <div>Make sure to visit us at the Nashville North Location</div>
             <div>300 Kitty Drive</div>
         </address>
     

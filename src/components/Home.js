@@ -6,7 +6,7 @@ import "./Home.css";
 export const Home = () => (
     <>
         <h2>Nashville Kennels</h2>
-        <small>Loving care when you're not there.</small>
+        <small>The best loving care when you're not there.</small>
 
 
         <address>

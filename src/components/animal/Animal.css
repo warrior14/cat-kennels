@@ -5,8 +5,8 @@
 }
 
 .animal {
-    flex-basis: 28%;
-    margin: 1em;
-    padding: 1em;
-    border: 2px solid paleturquoise;
+    flex-basis: 27%;
+    margin: 2em;
+    padding: 2em;
+    border: 3px solid blue;
 }
